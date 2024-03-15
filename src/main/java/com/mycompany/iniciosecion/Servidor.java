@@ -25,7 +25,7 @@ public class Servidor {
                 Socket clientSocket = serverSocket.accept();
                 System.out.println("Nuevo cliente conectado desde: " + clientSocket.getInetAddress());
                 ManejadorCliente manejadorC = new ManejadorCliente(clientSocket, manejadorU);
-                manejadorC.start(); // Iniciar el hilo para manejar el cliente
+                manejadorC.start(); 
             }
         } catch (IOException e) {
             e.printStackTrace();
